@@ -29,7 +29,7 @@ namespace Cosmos.HAL
         private static void EnumerateDevices()
         {
             devices = new List<PCIDevice>();
-            //EnumerateBus(0, 0);
+            EnumerateBus(0, 0);
         }
 
         private static void EnumerateBus(uint xBus, uint step)

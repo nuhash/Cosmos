@@ -109,6 +109,7 @@
     <Compile Include="Graphics\Mode.cs" />
     <Compile Include="Graphics\Pen.cs" />
     <Compile Include="Graphics\VBEScreen.cs" />
+    <Compile Include="Graphics\VMWareScreen.cs" />
     <Compile Include="Kernel.cs" />
     <Compile Include="Keyboard\ConsoleKeyEx.cs" />
     <Compile Include="Keyboard\ConsoleKeyExExtensions.cs" />

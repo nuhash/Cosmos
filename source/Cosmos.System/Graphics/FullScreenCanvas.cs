@@ -17,7 +17,7 @@ namespace Cosmos.System.Graphics
             Global.mDebugger.SendInternal("GetFullScreenCanvas() with mode " + mode);
 
             if (MyVideoDriver == null)
-                return MyVideoDriver = new VBEScreen(mode);
+                return MyVideoDriver = new VMWareScreen(mode);
 
             /* We have already got a VideoDriver istance simple change its mode */
             MyVideoDriver.Mode = mode;
@@ -28,7 +28,7 @@ namespace Cosmos.System.Graphics
         {
             Global.mDebugger.SendInternal($"GetFullScreenCanvas() with default mode");
             if (MyVideoDriver == null)
-                return new VBEScreen();
+                return new VMWareScreen();
 
             /* We have already got a VideoDriver istance simple reset its mode to DefaultGraphicMode */
             MyVideoDriver.Mode = MyVideoDriver.DefaultGraphicMode;
